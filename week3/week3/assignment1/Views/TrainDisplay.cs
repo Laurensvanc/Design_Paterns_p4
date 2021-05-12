@@ -11,7 +11,7 @@ using assignment1.Model;
 
 namespace assignment1.Views
 {
-    public partial class TrainDisplay : Form
+    public partial class TrainDisplay : Form, IStationObserver
     {
         ITrainJourney TrainJourney;
 
@@ -23,9 +23,10 @@ namespace assignment1.Views
             TrainJourney.AddObserver(this);
         }
 
-        public void Update(IStationObserver currentStation)
+        public void Update(TrainStation currentStation)
         {
-            
+            lbl_CurrentStation.Text = currentStation.name;
+            lbl_CurrentTrack.Text = currentStation.arrivalTrack;
         }
     }
 }

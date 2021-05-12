@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace assignment1.Model
 {
-    class TrainJourney : ITrainJourney
+    public class TrainJourney : ITrainJourney
     {
-        List<TrainStation> stations = new List<TrainStation>()
+        private List<TrainStation> stations = new List<TrainStation>()
         {
             new TrainStation("Hoofddorp", "Spoor 3", new DateTime(2021, 05, 02, 10, 30, 00), new DateTime(2021, 05, 02, 10, 34, 00)),
             new TrainStation("Schiphol Airport", "Spoor 2", new DateTime(2021, 05, 02, 10, 39, 00), new DateTime(2021, 05, 02, 10, 41, 00)),
@@ -16,7 +16,7 @@ namespace assignment1.Model
             new TrainStation("Amsterdam Sloterdijk", "Spoor 12", new DateTime(2021, 05, 02, 10, 52, 00), new DateTime(2021, 05, 02, 10, 53, 00)),
             new TrainStation("Amsterdam Centraal", "Spoor 10b", new DateTime(2021, 05, 02, 10, 59, 00), new DateTime(2021, 05, 02, 11, 00, 00)),
             new TrainStation("Den Helder Centrum", "Spoor 2", new DateTime(2021, 05, 02, 11, 30, 00), new DateTime(2021, 05, 02, 11, 33, 00)),
-            new TrainStation("Nijmegen", "Spoor 3", new DateTime(2021, 05, 02, 14, 15, 00), new DateTime(2021, 05, 02, 14, 17, 00)),
+            new TrainStation("Nijmegen", "Spoor 3", new DateTime(2021, 05, 02, 14, 15, 00), new DateTime(2021, 05, 02, 14, 17, 00))
         };
 
         private List<IStationObserver> stationObserver;
@@ -36,7 +36,7 @@ namespace assignment1.Model
 
         public void NextStation()
         {
-            if (currentStation <= stations.Count)
+            try
             {
                 currentStation++;
 
@@ -44,11 +44,12 @@ namespace assignment1.Model
                 {
                     observer.Update(stations[currentStation]);
                 }
-
                 return;
             }
-
-            Console.WriteLine("You've reached your destination");
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void RemoveObserver(IStationObserver observer)

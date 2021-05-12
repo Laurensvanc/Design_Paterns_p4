@@ -13,11 +13,6 @@ namespace assignment1
             Console.WriteLine("extracting call data...");
         }
 
-        public override void Load()
-        {
-            Console.WriteLine("loading transformed data...");
-        }
-
         public override void Transform()
         {
             Console.WriteLine("transforming call data...");

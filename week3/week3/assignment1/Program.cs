@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using assignment1.Views;
+using assignment1.Controller;
+using assignment1.Model;
+
 
 namespace assignment1
 {
@@ -16,7 +20,7 @@ namespace assignment1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ControlPanel(new TrainController(new TrainJourney())));
         }
     }
 }

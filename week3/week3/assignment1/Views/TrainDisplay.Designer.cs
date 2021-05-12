@@ -37,9 +37,10 @@ namespace assignment1.Views
             // 
             this.lbl_CurrentStation.AutoSize = true;
             this.lbl_CurrentStation.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lbl_CurrentStation.Location = new System.Drawing.Point(12, 32);
+            this.lbl_CurrentStation.Location = new System.Drawing.Point(16, 39);
+            this.lbl_CurrentStation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_CurrentStation.Name = "lbl_CurrentStation";
-            this.lbl_CurrentStation.Size = new System.Drawing.Size(166, 26);
+            this.lbl_CurrentStation.Size = new System.Drawing.Size(208, 31);
             this.lbl_CurrentStation.TabIndex = 0;
             this.lbl_CurrentStation.Text = "Current station: ";
             // 
@@ -47,19 +48,21 @@ namespace assignment1.Views
             // 
             this.lbl_CurrentTrack.AutoSize = true;
             this.lbl_CurrentTrack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lbl_CurrentTrack.Location = new System.Drawing.Point(12, 58);
+            this.lbl_CurrentTrack.Location = new System.Drawing.Point(16, 71);
+            this.lbl_CurrentTrack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_CurrentTrack.Name = "lbl_CurrentTrack";
-            this.lbl_CurrentTrack.Size = new System.Drawing.Size(160, 26);
+            this.lbl_CurrentTrack.Size = new System.Drawing.Size(201, 31);
             this.lbl_CurrentTrack.TabIndex = 1;
             this.lbl_CurrentTrack.Text = "Railway Track: ";
             // 
             // TrainDisplay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 124);
+            this.ClientSize = new System.Drawing.Size(577, 153);
             this.Controls.Add(this.lbl_CurrentTrack);
             this.Controls.Add(this.lbl_CurrentStation);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TrainDisplay";
             this.Text = "Train Display";
             this.ResumeLayout(false);

@@ -13,11 +13,6 @@ namespace assignment1
             Console.WriteLine("extracting twitter data...");
         }
 
-        public override void Load()
-        {
-            Console.WriteLine("loading transformed data...");
-        }
-
         public override void Transform()
         {
             Console.WriteLine("transforming twitter data...");

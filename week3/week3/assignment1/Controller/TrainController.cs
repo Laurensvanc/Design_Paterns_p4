@@ -9,18 +9,17 @@ namespace assignment1.Controller
 {
     class TrainController : ITrainController
     {
-        private ITrainJourney trainjourney;
+        private ITrainJourney _trainJourney;
+        public ITrainJourney TrainJourney { get { return _trainJourney; } }
 
         public TrainController(ITrainJourney trainJourney)
         {
-            this.trainjourney = trainJourney;
+            this._trainJourney = trainJourney;
         }
-
-        public ITrainJourney TrainJourney { get { return TrainJourney; } }
 
         public void NextStation()
         {
-            trainjourney.NextStation();
+            _trainJourney.NextStation();
         }
     }
 }

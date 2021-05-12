@@ -25,6 +25,9 @@ namespace assignment1
 
         public abstract void Extract();
         public abstract void Transform();
-        public abstract void Load();
+        public void Load() 
+        {
+            Console.WriteLine("loading transformed data...");
+        }
     }
 }

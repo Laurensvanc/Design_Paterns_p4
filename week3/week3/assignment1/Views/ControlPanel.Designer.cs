@@ -35,9 +35,10 @@ namespace assignment1.Views
             // 
             // btn_NewDisplay
             // 
-            this.btn_NewDisplay.Location = new System.Drawing.Point(12, 182);
+            this.btn_NewDisplay.Location = new System.Drawing.Point(16, 224);
+            this.btn_NewDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_NewDisplay.Name = "btn_NewDisplay";
-            this.btn_NewDisplay.Size = new System.Drawing.Size(106, 23);
+            this.btn_NewDisplay.Size = new System.Drawing.Size(141, 28);
             this.btn_NewDisplay.TabIndex = 3;
             this.btn_NewDisplay.Text = "New display";
             this.btn_NewDisplay.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@ namespace assignment1.Views
             // btn_NextStation
             // 
             this.btn_NextStation.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btn_NextStation.Location = new System.Drawing.Point(64, 65);
+            this.btn_NextStation.Location = new System.Drawing.Point(85, 80);
+            this.btn_NextStation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_NextStation.Name = "btn_NextStation";
-            this.btn_NextStation.Size = new System.Drawing.Size(194, 49);
+            this.btn_NextStation.Size = new System.Drawing.Size(259, 60);
             this.btn_NextStation.TabIndex = 2;
             this.btn_NextStation.Text = "Next Station";
             this.btn_NextStation.UseVisualStyleBackColor = true;
@@ -56,12 +58,13 @@ namespace assignment1.Views
             // 
             // ControlPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 217);
+            this.ClientSize = new System.Drawing.Size(435, 267);
             this.Controls.Add(this.btn_NewDisplay);
             this.Controls.Add(this.btn_NextStation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ControlPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control Panel";
