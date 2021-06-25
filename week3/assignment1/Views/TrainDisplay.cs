@@ -11,7 +11,7 @@ using assignment1.Model;
 
 namespace assignment1.Views
 {
-    public partial class TrainDisplay : Form, IStationObserver
+    public partial class TrainDisplay : Form
     {
         ITrainJourney TrainJourney;
 

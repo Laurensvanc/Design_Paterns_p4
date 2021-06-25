@@ -20,6 +20,8 @@ namespace assignment3
             player.NextSong();
             player.NextSong();
             player.NextSong();
+
+            Console.ReadKey();
         }
     }
 }
